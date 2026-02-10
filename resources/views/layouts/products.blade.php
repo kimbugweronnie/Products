@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Bootstrap -->
+    {{-- Taken from 
+    https://www.w3resource.com/twitter-bootstrap/tutorial.php --}}
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="main">
+    @yield('content')
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
